@@ -6,11 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 // 追加
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 // Model->Authenticatableに変更
 class Owner extends Authenticatable
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     // 下記はUser.phpからコピペ
     /**
