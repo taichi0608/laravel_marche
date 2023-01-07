@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -234,6 +235,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //https://image.intervention.io/v2/introduction/installationのライブラリ　Image->InterventionImageに変更
+        'InterventionImage' => Intervention\Image\Facades\Image::class,
         
 
     ],
